@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #DCDCDC;
+
+
+}
+
+.pagina_home {
+    margin: 0 auto;
+    width: 1400px;
+    background: rgba(251, 251, 251, 1);
+    position: relative;
+}
+.menu_lateral{
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  /* background-color: aqua;   */
+  z-index: 2;
+
+  font-size: 0;
+  transition: 0.3s linear;
+}
+.menu_abrir {
+    width: 200px;
+    height: 692px;
+    font-size: 15px;
+    transition: 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+.menu_lateral div{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    
+}
+.menu_lateral div img{
+    width: 100%;
+    height: 100%;
+}
+#menu-nav {
+    transition: 0.3s linear;
+}
+.pagina_home header {
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
+}
+.pagina_home header nav {
+ position: relative;   
+ /* background-color: aqua; */
+ display: flex;
+ width: 100%;
+ /* font-size: 0; */
+}
+
+/* .caixa_de_pesquisa, .botao_de_inserir, .perfil_do_usuario {
+    position: absolute;
+} */
+
+.caixa_de_pesquisa{
+    position: relative;
+    margin-left: 100px ;
+    width: 400px;
+    height: 30px;
+
+}
+
+
+.caixa_de_pesquisa img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7.5px;
+    right: 15px;
+    pointer-events: none;
+}
+.caixa_de_pesquisa input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 37px;
+    border: 1px solid rgba(198, 198, 198, 1);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.603);
+
+}
+.caixa_de_pesquisa input:focus{
+   outline: none;
+
+}
+.caixa_de_pesquisa input:focus{
+    border: 1px solid rgb(0, 0, 0);
+ 
+ }
+
+ .caixa_de_pesquisa input::placeholder {
+    color: rgba(0, 0, 0, 0.26);
+    
+ }
+
+.botao_de_inserir {
+    position: absolute;
+    width: 120px;
+    height: 100%; 
+    right: 90px ;
+
+}
+.botao_de_inserir button{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 186, 136, 1);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+.botao_de_inserir button:focus{
+    outline: none;
+}
+
+.perfil_do_usuario {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: rgba(246, 246, 246, 1);
+    cursor: pointer;
+}
+
+#menu-nav{
+    margin: 20px;
+    color: rgba(255, 255, 255, 1);
+    /* background-color: aqua; */
+}
+.quadro_home {
+    margin-top: 30px;
+    height: 600px;
+    overflow:hidden ;
+    overflow-y:scroll;
+    /* background-color: rgba(255, 79, 110, 1); */
+    
+}
+
+.quadro_home::-webkit-scrollbar {
+    background-color:rgba(255, 255, 255, 1);;
+    border-radius: 5px;
+}
+.quadro_home::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 79, 110, 1);
+    border-radius: 5px;
+}
+
+.card {
+    margin: 0 auto;
+    width: 1300px;
+    height: 170px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.card_head {
+    position: relative;
+    padding-top: 20px;
+}
+
+.card_head_nome {
+    margin-left: 25px;
+}
+.card_head_botoes{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    
+}
+.card_head_botoes button{
+    height: 30px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+.botao_editar {
+    background-color: rgba(248, 183, 15, 0.74);
+    padding: 0 5px 0 5px;
+    margin-right: 10px;
+}
+
+.botao_deletar {
+    background-color: rgba(255, 79, 110, 1);
+    padding: 0 5px 0 5px;
+}
+
+.card_body {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 30px;
+    /* background-color: aqua; */
+}
+/* .card div {
+    color: black;
+} */
+
+.dados_da_mae,.dados_do_bebe{
+    color:rgba(0, 0, 0, 0.54);
+    ;
+    width: 50%;
+}
+
+.dados_da_mae section ,.dados_do_bebe  section{
+    display: flex;
+}
+.mae_lado_1,.mae_lado_2,.bebe_lado_1,.bebe_lado_2 {
+    width: 50%;
+}
+
+
+
+#btn-inserir {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    opacity: 0 ;
+    pointer-events: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    top: 0;
+    width:100% ;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.formulario {
+    position: relative;
+    width: 1000px;
+    height: 225px;
+    background-color: #DCDCDC;
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+.form_lado_mae,.form_lado_bebe {
+    width: 50%;
+    margin-top: 15px;
+}
+.form_lado_mae{
+    margin-left: 20px;
+}
+/* .form_lado_bebe {
+    border-left: 1px solid ;
+} */
+.form_lado_mae section, .form_lado_bebe section{
+    display: flex;
+}
+.form_lado_mae section div,.form_lado_bebe section div{
+   width: 50%;
+}
+.form_lado_mae section div div,.form_lado_bebe section div div{
+    height: 40px;
+    width: 60px;
+ }
+
+ .form_lado_mae section div div input, .form_lado_bebe section div div input{
+    
+    border: 1px solid rgba(198, 198, 198, 1);
+    height: 25px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.603);
+    padding-left: 10px;
+    border-radius: 50px;
+ }
+
+ .form_lado_mae section div div input:focus,  .form_lado_bebe section div div input:focus{
+    
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+ }
+
+ .form_lado_mae section div div input::placeholder, .form_lado_bebe section div div input::placeholder{
+    color: rgba(0, 0, 0, 0.26);
+ }
+
+ .Adicionar_form {
+    position: absolute;
+    bottom: 21px;
+    right: 50px;
+    width: 120px;
+    height: 30px; 
+    box-sizing: border-box;
+    background-color: rgba(0, 186, 136, 1);
+    border: none;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    cursor: pointer;
+ }
+
+ .Sair_popup {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    cursor: pointer;
+ }
+
+ .Sair_popup img {
+     width: 100%;
+     height: 100%;
+ }
