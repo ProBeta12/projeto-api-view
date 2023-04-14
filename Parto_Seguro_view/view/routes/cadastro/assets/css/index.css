@@ -12,8 +12,8 @@ section {
 }
 
 form {
-    width: 511px;
-    height: 554px;
+    width: 496px;
+    height: 586px;
     position: relative;
     background-color: #FFFFFF;
     border-radius: 30px;
@@ -21,60 +21,67 @@ form {
 
 h1 {
     color: #FF4F6E;
-    font-size: 36px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 34px;
     display: flex;
     justify-content: center;
-    margin-top: 65px;
-    margin-bottom: 37px;
+    margin-top: 47px;
+    margin-bottom: 22px;
     font-weight: 600;
 }
 
-#email {
-    margin-bottom: 22.04px;
-}
-
-#senha {
-    margin-bottom: 45px;
-}
-
 label, p {
-    margin-left: 103px;
-    color: black;
+    margin-left: 107.49px;
     font-size: 18px;
+    color: black;
     font-weight: 300;
 }
 
 input {
-    margin-left: 96.07px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #FF4F6E;
     display: block;
-    width: 320px;
-    height: 50.82px;
+    width: 294.65px;
+    height: 43.54px;
     border: none;
     border-radius: 50px;
     background: #F7F7F7;
-    padding: 0;
+    margin-left: 96.07px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.47);
 }
 
 input:focus {
     outline: none;
-    border: 1px solid rgba(87, 87, 87, 0.47);
+    border: 1px solid rgba(87, 87, 87, 0.47);;
 }
 
-#entrar {
-    font-size: 28px;
+#cadastrar {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
     color: #FFFFFF;
     background-color: #FF5473;
-    margin-top: 0;
+    border: none;   
 }
 
-p {
-    margin-top: 10.76px;
+p {   
+    margin-top: 5px;
     font-size: 13px;
     font-weight: 400;
 }
 
-#pagcadastro {
+#login {
     font-weight: 400;
     margin-left: 4px; 
-    color: #FF4F6E; 
+    color: #FF4F6E;
 }

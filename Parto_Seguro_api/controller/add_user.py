@@ -1,4 +1,6 @@
 from flask import request,Blueprint
+from flask_cors import cross_origin
+
 from model.user import User
 import mongoengine
 
@@ -7,6 +9,7 @@ mongoengine.connect('maternidade')
 
 
 @usuario.route('/users', methods=['POST'])
+@cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
 def add_user():
     data = request.json
     user = User(**data)

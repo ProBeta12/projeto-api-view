@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js">
+    </script>
+    <title>tabelas</title>
+    
+</head>
+
+<body>
+    <section class="pagina_home">
+        <div class="menu_lateral">
+          <div>
+            <img src="./assets/img/menu_icon.svg" alt="" id="menu-toggle" class="menu_img" />
+          </div>
+          <nav id="menu-nav">
+            <p><a href="../home/index.html">Home</a></p><br>
+            <p><a href="">Gráficos</a></p>
+          </nav>
+        </div>
+        <header>
+          <nav>
+            <section class="caixa_de_pesquisa">
+              <input type="text" placeholder="Buscar Nome" />
+              <img src="./assets/img/lupa_icon.png" alt="" />
+            </section>
+            <section class="perfil_do_usuario_sair">
+              <section class="perfil_do_usuario">FM</section>
+              <hr>
+              <section class="sair"><a href="../../index.html">Sair</a></section>
+            </section>
+          </nav>
+        </header>
+        <main class="quadro_home">
+            <div>
+                <h1 style="text-align: center; margin-top: 0;">Balanço Geral de Gestação</h1>
+            </div>
+            <div class="graficos">
+            <canvas id="plots_1"></canvas>
+            <canvas id="plots_2"></canvas>
+            </div>
+            
+            <!-- <h2>
+                Outro grafico
+            </h2>
+            <canvas id="plots_3" style="width:100%;max-width:700px"></canvas>
+            -->
+            <canvas id="plots_4" style="width:100%;max-width:700px;margin: auto;margin-top: 10px;"></canvas>
+        
+        </main>
+        
+        </section>
+      </section>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

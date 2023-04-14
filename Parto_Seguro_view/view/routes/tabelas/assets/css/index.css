@@ -1,0 +1,249 @@
+
+   h1{
+    color:black;
+    margin-left:0%;
+   }
+   h2{
+    color:black;
+    margin-left:40%;
+   }
+
+
+   #plots_1,#plots_2,#plots_3,#plots_4{
+    background-color: #f5f5f5;
+   }
+
+#plots_1,#plots_2{
+    width: 200px;
+    margin-right: 10px;
+}
+.graficos{
+    display: flex;
+    width: 50%;
+}
+
+
+
+
+   * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #DCDCDC;
+
+
+}
+
+.pagina_home {
+    margin: 0 auto;
+    width: 1400px;
+    background: rgba(251, 251, 251, 1);
+    position: relative;
+}
+.menu_lateral{
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  /* background-color: aqua;   */
+  z-index: 2;
+
+  font-size: 0;
+  transition: 0.3s linear;
+}
+.menu_abrir {
+    width: 200px;
+    height: 692px;
+    font-size: 18px;
+    transition: 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+.menu_lateral div{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    
+}
+.menu_lateral div img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+}
+
+
+.menu_abrir_img {
+    transform: translateX(135px);
+}
+#menu-nav p a{
+    color: #DCDCDC;
+    appearance: none;
+    text-decoration: none;
+}
+.pagina_home header {
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
+}
+.pagina_home header nav {
+ position: relative;   
+ /* background-color: aqua; */
+ display: flex;
+ width: 100%;
+ /* font-size: 0; */
+}
+
+/* .caixa_de_pesquisa, .botao_de_inserir, .perfil_do_usuario {
+    position: absolute;
+} */
+
+.caixa_de_pesquisa{
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    margin-left: 100px ;
+    width: 400px;
+    height: 30px;
+
+}
+
+
+.caixa_de_pesquisa img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7.5px;
+    right: 15px;
+    pointer-events: none;
+}
+.caixa_de_pesquisa input{
+    
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 37px;
+    border: 1px solid rgba(198, 198, 198, 1);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.603);
+
+}
+.caixa_de_pesquisa input:focus{
+   outline: none;
+
+}
+.caixa_de_pesquisa input:focus{
+    border: 1px solid rgb(0, 0, 0);
+ 
+ }
+
+ .caixa_de_pesquisa input::placeholder {
+    color: rgba(0, 0, 0, 0.26);
+    
+ }
+
+.botao_de_inserir {
+    position: absolute;
+    width: 120px;
+    height: 100%; 
+    right: 90px ;
+
+}
+.botao_de_inserir button{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 186, 136, 1);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+.botao_de_inserir button:focus{
+    outline: none;
+}
+.perfil_do_usuario_sair{
+    position: absolute;
+    top: -5px;
+    right: 20px;
+}
+.perfil_do_usuario_sair_ok{
+    width: 150px;
+    height: 103px;
+    z-index: 1;
+    transition: 0.3s reverse;
+    background-color: rgba(0, 0, 0, 0.747);
+    top: -15px;
+    right: 0;
+}
+hr{
+    opacity: 0;
+}
+
+.perfil_do_usuario_sair_ok hr {
+    margin-top: 20px;
+    opacity: 1;
+}
+.perfil_do_usuario_sair section a{
+    font-size: 0;
+}
+.perfil_do_usuario_sair_ok section a{
+    color: #DCDCDC;
+    text-decoration: none;
+    font-size: 18px;
+}
+.perfil_do_usuario_sair_ok .sair{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.perfil_do_usuario {
+    /* position: absolute; */
+    top: -5px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: rgba(246, 246, 246, 1);
+    cursor: pointer;
+}
+.perfil_do_usuario_sair_ok .perfil_do_usuario{
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+    right: 0;
+}
+
+#menu-nav{
+    margin: 20px;
+    color: rgba(255, 255, 255, 1);
+    /* background-color: aqua; */
+}
+.quadro_home {
+    margin-top: 30px;
+    height: 600px;
+    overflow:hidden ;
+    overflow-y:scroll;
+    /* background-color: rgba(255, 79, 110, 1); */
+    
+}
+
+.quadro_home::-webkit-scrollbar {
+    background-color:rgba(255, 255, 255, 1);;
+    border-radius: 5px;
+}
+.quadro_home::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 79, 110, 1);
+    border-radius: 5px;
+}
+
